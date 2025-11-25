@@ -1,23 +1,115 @@
-<h2 class="mt-4">Most Famous Cafés in History</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul class="list-group mt-3">
-    <li class="list-group-item">
-        <strong>Café Procope — Paris, France</strong><br>
-        One of the oldest cafés in Europe and a meeting place for writers and political thinkers.
-    </li>
+<head>
+    <!-- DEVELOPER: Khadija Maxammad Amin, IS117-xxx, Fall 2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café History – Famous Cafés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
 
-    <li class="list-group-item">
-        <strong>Caffè Florian — Venice, Italy</strong><br>
-        Opened in 1720 and famous for its beautiful interior and long cultural history.
-    </li>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brown">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Café History logo" class="logo-img me-2">
+                    <span>Café History</span>
+                </a>
 
-    <li class="list-group-item">
-        <strong>Café Central — Vienna, Austria</strong><br>
-        Popular with poets, artists, and philosophers during the late 1800s.
-    </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <li class="list-group-item">
-        <strong>Les Deux Magots — Paris, France</strong><br>
-        A well-known meeting spot for famous writers and painters in the 1900s.
-    </li>
-</ul>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="history.html" id="historyDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                History
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="historyDropdown">
+                                <li><a class="dropdown-item" href="history.html">Overview</a></li>
+                                <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                <li><a class="dropdown-item active" href="famousCafes.html">Famous Cafés</a></li>
+                                <!-- NOTE: using famousCafes.html here since that’s your actual file name -->
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="references.html">References</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container py-4">
+
+            <h1 class="page-title mb-3">Famous Cafés Throughout History</h1>
+
+            <!-- Image on the right, same cozy vibe as other pages -->
+            <img src="images/Famous Cafes.png" alt="Painting of a historic European café with warm evening lighting"
+                class="float-md-end float-img ms-md-3 mb-3">
+
+            <p>
+                Throughout history, certain cafés became famous because of the people who spent time there and the
+                ideas that were shared at their tables. Writers, artists, and political thinkers often returned to
+                the same cafés again and again. These places were more than simple businesses; they were meeting
+                points where new thoughts and movements could begin.
+            </p>
+
+            <!-- Simple colored box with a bullet list of café names -->
+            <div class="mt-4 p-3 rounded" style="background-color: #fff3e6;">
+                <h2 class="h5 mb-3">Examples of Well-Known Cafés</h2>
+                <ul class="mb-0">
+                    <li><strong>Café Procope — Paris, France</strong> – Often said to be one of the oldest cafés in
+                        Europe.</li>
+                    <li><strong>Caffè Florian — Venice, Italy</strong> – A historic café located in the famous St.
+                        Mark’s Square.</li>
+                    <li><strong>Café Central — Vienna, Austria</strong> – Known as a classic meeting place for writers
+                        and thinkers.</li>
+                    <li><strong>Les Deux Magots — Paris, France</strong> – Visited by many important authors and artists
+                        in the 1900s.</li>
+                </ul>
+            </div>
+
+            <p class="mt-3">
+                Today, many of these cafés are still open to visitors. People can sit where famous guests once sat,
+                enjoy a drink, and imagine the conversations that might have happened there. Even if someone has
+                never heard the names of these cafés before, they can still feel the history in the way the rooms
+                look, sound, and feel.
+            </p>
+
+        </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-light">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© 2025 Khadija Maxammad Amin. Café History. All Rights Reserved.</span>
+            <div class="footer-links">
+                <a href="#" class="text-light text-decoration-none me-3">Terms of Use</a>
+                <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
