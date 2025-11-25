@@ -36,3 +36,97 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="historyDropdown">
                                 <li><a class="dropdown-item" href="history.html">Overview</a></li>
                                 <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                <li><a class="dropdown-item" href="famousCafes.html">Famous Cafés</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container py-4">
+
+            <h1 class="page-title mb-3">Contact the Author</h1>
+
+            <p>
+                If you want to suggest a correction, share a new reference, or ask a question about café history,
+                you can use the form below. Your feedback helps keep this site accurate and helpful for future visitors.
+            </p>
+
+            <div class="row mt-4">
+                <!-- Contact Form -->
+                <div class="col-lg-7 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="reason">Reason for Contact</label>
+                            <select id="reason" class="form-select">
+                                <option value="">Choose an option</option>
+                                <option value="correction">Suggest a correction</option>
+                                <option value="reference">Share a new reference</option>
+                                <option value="question">Ask a question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Short summary">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                placeholder="Type your message here"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-brown">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Tips box with image -->
+                <div class="col-lg-5">
+                    <div class="p-3 bg-light rounded shadow-sm">
+                        <h2 class="h5">Tips for a Helpful Message</h2>
+                        <ul>
+                            <li>Mention which page you are referring to.</li>
+                            <li>Share names or dates exactly as they appear.</li>
+                            <li>Include a link if you are suggesting a source.</li>
+                        </ul>
+
+                        <img src="images/Reference.png" alt="Coffee cup and notebook artwork"
+                            class="img-fluid rounded mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-light">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© 2025 Khadija Maxammad Amin. Café History. All Rights Reserved.</span>
+            <div class="footer-links">
+                <a href="#" class="text-light text-decoration-none me-3">Terms of Use</a>
+                <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
