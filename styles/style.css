@@ -1,0 +1,118 @@
+/* DEVELOPER: Your Name, IS117-xxx, Fall 2025 */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #fffaf5;
+    color: #2b1b17;
+}
+
+/* Brand color for navbar and buttons */
+.bg-brown {
+    background-color: #5a3825;
+}
+
+.btn-brown {
+    background-color: #5a3825;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-brown:hover {
+    background-color: #3f281a;
+    color: #ffffff;
+}
+
+/* Navbar logo */
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* Home hero section (only homepage uses this) */
+.hero-home {
+    background: linear-gradient(120deg, #5a3825, #c58b5b);
+    min-height: 60vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hero-home .hero-image {
+    max-width: 320px;
+}
+
+/* Page title style for interior pages */
+.page-title {
+    border-bottom: 2px solid #c58b5b;
+    padding-bottom: 0.5rem;
+}
+
+/* Cards */
+.custom-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0.75rem;
+}
+
+.custom-card .card-img-top {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+/* For side-by-side card images */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Timeline list */
+.timeline-list .list-group-item {
+    border-left: 4px solid #c58b5b;
+    margin-bottom: 0.75rem;
+}
+
+/* Floated image for text wrapping */
+.float-img {
+    max-width: 260px;
+    border-radius: 0.75rem;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General text spacing */
+.container p {
+    line-height: 1.6;
+}
+
+/* Media query: adjust for mobile screens */
+@media (max-width: 576px) {
+    .hero-home {
+        text-align: center;
+    }
+
+    .hero-home h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-home p {
+        font-size: 1rem;
+    }
+
+    .float-img {
+        float: none !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

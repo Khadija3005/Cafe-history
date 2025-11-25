@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DEVELOPER: Your Name, IS117-xxx, Fall 2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café History – Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-brown">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Café History logo" class="logo-img me-2">
+                    <span>Café History</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="history.html" id="historyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                History
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="historyDropdown">
+                                <li><a class="dropdown-item" href="history.html">Overview</a></li>
+                                <li><a class="dropdown-item" href="timeline.html">Timeline</a></li>
+                                <li><a class="dropdown-item" href="famous-cafes.html">Famous Cafés</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="references.html">References</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <!-- Unique hero layout only on homepage -->
+        <section class="hero-home text-light d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-7">
+                        <h1 class="display-4 fw-bold mb-3">The Story Behind Your Coffee</h1>
+                        <p class="lead">
+                            Cafés are more than just places to grab a drink. For hundreds of years, they have been
+                            meeting spots where people share ideas, read, relax, and connect with others. This site
+                            walks through how cafés started, how they spread around the world, and why they still
+                            matter today.
+                        </p>
+                        <p>
+                            Start with the origins of cafés, follow a simple timeline of important events, and learn
+                            about famous cafés that became part of cultural history. Whether you love coffee or just
+                            like hanging out in cozy spaces, café history shows how a simple drink helped shape public
+                            life.
+                        </p>
+                        <a href="history.html" class="btn btn-light btn-lg mt-3">Begin with the History</a>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="images/coffee-view.jpg"
+                            alt="Cup of coffee with foam on a balcony table overlooking a city"
+                            class="img-fluid rounded shadow hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Homepage cards -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Explore the World of Cafés</h2>
+                <p class="text-center mb-5">
+                    Use the sections below to explore different parts of café history. Each page focuses on a
+                    specific topic so you can move through the story at your own pace.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card custom-card h-100">
+                            <img src="images/historic-cafe-street.jpg" class="card-img-top"
+                                alt="Historic European street café with people sitting outside">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Origins & Culture</h5>
+                                <p class="card-text">
+                                    Learn how early coffeehouses in the Middle East and Europe grew into important
+                                    centers for conversation, business, and culture.
+                                </p>
+                                <a href="history.html" class="btn btn-brown mt-auto">Read the History</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card custom-card h-100">
+                            <img src="images/coffee-notebook.jpg" class="card-img-top"
+                                alt="Cup of coffee next to a notebook and pen on a wooden table">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Timeline of Events</h5>
+                                <p class="card-text">
+                                    Follow a simple timeline that shows how cafés spread from one region to another
+                                    and changed with each new era.
+                                </p>
+                                <a href="timeline.html" class="btn btn-brown mt-auto">View the Timeline</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card custom-card h-100">
+                            <img src="images/modern-cozy-cafe.jpg" class="card-img-top"
+                                alt="Warm modern café interior with lights and people talking">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Famous Cafés</h5>
+                                <p class="card-text">
+                                    Discover well-known cafés that became gathering places for writers,
+                                    artists, and everyday people throughout history.
+                                </p>
+                                <a href="famous-cafes.html" class="btn btn-brown mt-auto">See Famous Cafés</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-light">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© 2025 Your Name. Café History. All Rights Reserved.</span>
+            <div class="footer-links">
+                <a href="#" class="text-light text-decoration-none me-3">Terms of Use</a>
+                <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
